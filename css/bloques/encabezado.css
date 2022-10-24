@@ -1,0 +1,171 @@
+.encabezado {
+    background-color: var(--fondo-tiza);
+}
+
+.encabezado__opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.encabezado__nombre {
+    background-image: url(../../assets/vector.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.encabezado__nombre h2 {
+    font-weight: 700;
+    display: inline;
+    padding-left: 2rem;
+    font-size: 16px;
+    color: var(--fuente-negro-claro);
+}
+
+.encabezado__lista {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--fuente-negro-claro);
+}
+
+.encabezado__lista li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.encabezado__lista li:last-child {
+    font-weight: 700;
+}
+
+.encabezado__presentacion {
+    display: flex;
+    align-items: center;
+}
+
+.encabezado__texto h1 {
+    font-size: 52px;
+    color: var(--fuente-negro-claro);
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+.encabezado__texto p {
+    padding: 30px 0;
+    font-size: 22px;
+    line-height: 2rem;
+    color: var(--fuente-negro-claro);
+}
+
+.encabezado__imagen {
+    border-radius: 50%;
+}
+
+.encabezado__lista--presentacion li {
+    display: inline;
+    padding: 0 40px 0 0;
+    color: var(--fuente-negro-claro);
+    font-weight: 500px;
+}
+
+.encabezado__boton {
+    border: none;
+    display: none;
+}
+
+.encabezado__boton img {
+    width: 50px;
+    height: 50px;
+}
+
+.encabezado__boton:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    .encabezado__boton {
+        display: block;
+        align-self: flex-end;
+        margin-top: -43px;
+    }
+
+    .encabezado__opciones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .encabezado__lista {
+        order: 3;
+        width: 100%;
+    }
+
+    .encabezado__lista li {
+        display: block;
+        border-bottom: 1px solid var(--fuente-negro-claro);
+    }
+
+    /*Clase por defecto oculta el menu cuando la pantalla llega a los 950px. Se toma el line-height a 0 y se le da transition para dar el efecto de achicamiento*/
+    .ocultar__menu {
+        visibility: hidden;
+        line-height: 0;
+        opacity: 0;
+        transition: all 200ms;
+    } 
+
+    /*Elemento de lista. Se toma el padding ya que la propiedad line-height no hace transición con un valor distinto de inherit en la clase de abajo*/
+    .ocultar__menu li {
+        padding: 0;
+        transition: 200ms;
+    }
+
+    /*Aca la propiedad line-height no hace transition cuando tiene un valor distinto de inherit. Por eso se toma también el padding en los elementos de lista. Esta clase se agrega y se quita desde el boton*/
+    .mostrar__menu {
+       visibility: visible;
+       line-height: inherit;
+       opacity: 1;
+    }
+
+    /*Aca volvemos a poner el padding para dar un mayor espaciamiento a los elementos de lista*/
+    .mostrar__menu li {
+        padding: .7rem 0;
+    }
+
+    .encabezado__texto h1 {
+        font-size: 22px;
+        line-height: 1.5rem;
+    }
+
+    .encabezado__texto p {
+        padding: 1rem 0;
+        font-size: 16px;
+        line-height: 1rem;
+    }
+
+    .encabezado__lista li {
+        font-size: 16px;
+    }
+
+    .encabezado__imagen {
+        height: 146px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .encabezado__opciones {
+        padding-bottom: 1rem;
+    }
+
+    .encabezado__presentacion {
+        flex-direction: column-reverse;
+        align-items: baseline;
+    }
+
+    .encabezado__texto h1 {
+        padding-top: 1rem;
+    }
+
+    .encabezado__lista--presentacion li {
+        padding: 0 5px 0 0;
+    }
+}

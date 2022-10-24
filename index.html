@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bases.css">
+    <link rel="stylesheet" href="./css/bloques/encabezado.css">
+    <link rel="stylesheet" href="./css/bloques/sobremi.css">
+    <link rel="stylesheet" href="./css/bloques/skills.css">
+    <link rel="stylesheet" href="./css/bloques/formacion.css">
+    <link rel="stylesheet" href="./css/bloques/proyectos.css">
+    <link rel="stylesheet" href="./css/bloques/contacto.css">
+    <link rel="stylesheet" href="./css/bloques/footer.css">
+    <title>Mi portafolio</title>
+</head>
+<body>
+    <section class="encabezado container">
+        <nav class="encabezado__opciones">
+            <div class="encabezado__nombre">
+                <h2>Alejandro Daniel Martín</h2>
+            </div>
+            <ul class="encabezado__lista ocultar__menu" id="encabezado-lista">
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">admartin1973@gmail.com</a></li>
+            </ul>
+            <button class="encabezado__boton" id="boton-encabezado"><img src="./assets/boton_menu.png" alt=""></button>
+        </nav>
+        <div class="encabezado__presentacion">
+            <div class="encabezado__texto">
+                <h1>Hola mi nombre es Alejandro Daniel Martín y soy estudiante de programación</h1>
+                <p>Soy Programador Universitario egrasado de la Universidad Nacional de San Juan. Actualmente estoy participando del proyecto Oracle ONE en Alura Latam para convertirme en fullstack developer</p>
+                <ul class="encabezado__lista--presentacion">
+                    <li><a href="https://github.com/admartin1973">Github <img src="./assets/arrow.png" alt=""></a></li>
+                    <li><a href="www.linkedin.com/in/alejandro-martín-react1973abc">Linkedin <img src="./assets/arrow.png" alt=""></a></li>
+                    <li><a href="https://www.facebook.com/admartin1973">Facebook <img src="./assets/arrow.png" alt=""></a></li>
+                </ul>
+            </div>
+            <img class="encabezado__imagen" src="./assets/Perfil4.jpg" alt="Imagen Perfil">
+        </div>
+    </section>
+    
+    <section class="sobremi container" id="sobre-mi">
+        <h2 class="sobremi__titulo">Sobre mi</h2>
+        <p class="sobremi__texto">Nombre: Alejandro Daniel Martín.<br>Edad: 49 años.<br>Nacionalidad: Argentino.<br>.En 1999 egresé con el título de Programador Universitario de la Universidad Nacional de San Juan. Luego estuve desempeñando tareas administrativas en una papelera durante 7 años, posteriormente trabajé 14 años en el rubro minero, en el cual me dediqué bastante al análisis de datos usando SQL y migrando a Excel para distintos tipos de reportes gerenciales. Mi sueño es convertirme en un fullstack developer y es por eso que actualmente soy parte de la comunidad de Alura.</p>
+        <img class="sobremi__imagen" src="./assets/firma.png" alt="Firma">
+    </section>
+
+    <section class="skills container" id="skills">
+        <h2 class="skills__titulo">Skills</h2>
+        <div class="skills__tarjetas">
+            <div class="skills__tarjeta">
+                <img src="./assets/html.png" alt="Logo HTML">
+                <h2>HTML5</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/css.png" alt="Logo Css">
+                <h2>CSS3</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/js.png" alt="Logo JavaScript">
+                <h2>JavaScript</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/react.png" alt="Logo React">
+                <h2>React</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/nodejs.png" alt="Logo NodeJs">
+                <h2>Node JS</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/postgresql.png" alt="Logo PostgreSql">
+                <h2>PostgreSql</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/sqlserver.png" alt="Logo SqlServer">
+                <h2>Sql Server</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/excel.png" alt="Logo Excel">
+                <h2>Excel</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Se usan las mismas clases de skills-->
+    <section class="skills container" id="hobbies">
+        <h2 class="skills__titulo">Hobbies</h2>
+        <div class="skills__tarjetas">
+            <div class="skills__tarjeta">
+                <img src="./assets/gym.png" alt="Logo Gym">
+                <h2>Gimnasio</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/arqueria.png" alt="Logo Aqueria">
+                <h2>Arquería</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/treking.png" alt="Logo Trekking">
+                <h2>Trekking</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/joystick.png" alt="Logo Gaming">
+                <h2>Gaming</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/series.png" alt="Logo Series">
+                <h2>Series</h2>
+            </div>
+            <div class="skills__tarjeta">
+                <img src="./assets/cine.png" alt="Logo Cine">
+                <h2>Cine</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="formacion container" id="formacion">
+        <h2 class="formacion__titulo">Formación académica</h2>
+        <div class="formacion__tarjetas">
+            <div class="formacion__tarjeta">
+                <img src="./assets/titulo_unsj.jpg" alt="Titulo UNSJ">
+                <h2>Programador Universtario</h2>
+                <h4>1999 UNSJ</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/certificado_js.jpg" alt="Certificado Learn JavaScript">
+                <h2>Learn JavaScript</h2>
+                <h4>2022 LEARNJAVASCRIPT.ONLINE</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/certificado_react.jpg" alt="Certificado React">
+                <h2>React Tutorial</h2>
+                <h4>2022 REACT-TUTORIAL.APP</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/certificado_logica_programacion1.jpg" alt="Certificado programación 1">
+                <h2>Logica de programación 1</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/certificado_logica_programacion2.jpg" alt="Certificado programación 2">
+                <h2>Logica de programación 2</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/certificado_logica_programacion3.jpg" alt="Certificado programación 3">
+                <h2>Logica de programación 3</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/html_y_css1.jpg" alt="Certificado HTML y CSS 1">
+                <h2>HTML y CSS parte 1</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/html_y_css2.jpg" alt="Certificado HTML y CSS 2">
+                <h2>HTML y CSS parte 2</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/html_y_css3.jpg" alt="Certificado HTML y CSS 3">
+                <h2>HTML y CSS parte 3</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/html_y_css4.jpg" alt="Certificado HTML y CSS 4">
+                <h2>HTML y CSS parte 4</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/curso_git.jpg" alt="Certificado Git">
+                <h2>Git y Github</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/curso_flexbox.jpg" alt="Certificado Flexbox">
+                <h2>Flexbox</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/curso_grid.jpg" alt="Certificado Grid">
+                <h2>Grid</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/curso_foco.jpg" alt="Certificado Foco">
+                <h2>Foco</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/curso_habitos.jpg" alt="Certificado Hábitos">
+                <h2>Hábitos</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+            <div class="formacion__tarjeta">
+                <img src="./assets/curso_productividad.jpg" alt="Certificado Productividad">
+                <h2>Productividad</h2>
+                <h4>2022 Oracle ONE + Alura Latam</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="proyectos container" id="proyectos">
+        <h2 class="proyectos__titulo">Experiencia Profesional</h2>
+        <div class="proyectos__tarjeta--izq">
+            <img class="proyectos__imagen" src="./assets/encriptador.jpg" alt="Imagen encriptador">
+            <div class="proyectos__vinculos">
+                <h3>Encriptador de Texto</h3>
+                <h4>Challenge Alura Encriptador</h4>
+                <div class="proyectos__botones">
+                    <a href="https://github.com/admartin1973/admartin1973.github.io"><button class="proyectos__btn">Repositorio</button></a>
+                    <a href="https://admartin1973.github.io/"><button class="proyectos__btn">Ver Demo</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="proyectos__tarjeta--der">
+            <img class="proyectos__imagen" src="./assets/ahorcado.jpg" alt="Imagen juego del ahorcado">
+            <div class="proyectos__vinculos">
+                <h3>Juego del ahorcado</h3>
+                <h4>Challenge Alura Encriptador</h4>
+                <div class="proyectos__botones">
+                    <a href="https://github.com/admartin1973/admartin1973.ahorcado.github.io"><button class="proyectos__btn">Repositorio</button></a>
+                    <a href="https://admartin1973.github.io/admartin1973.ahorcado.github.io/"><button class="proyectos__btn">Ver Demo</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="proyectos__tarjeta--izq">
+            <img class="proyectos__imagen" src="./assets/SuperM.jpg" alt="Imagen SuperM app">
+            <div class="proyectos__vinculos">
+                <h3>SuperM</h3>
+                <h4>React Tutorial</h4>
+                <div class="proyectos__botones">
+                    <a href="https://github.com/admartin1973/final-curso-react"><button class="proyectos__btn">Repositorio</button></a>
+                    <a href="#"><button class="proyectos__btn">Ver Demo</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto container" id="contacto">
+        <img class="contacto__imagen" src="./assets/contact_image.png" alt="imagen teléfono">
+        <div class="contacto__general">
+            <h2 class="contacto__titulo">Contacto</h2>
+            <p>¿Quiere contactarme? <br> Complete el siguiente formulario y me pondré en contacto con usted lo antes posible</p>
+            <form class="contacto__formulario" action="">
+                <div class="contacto__campos">
+                    <input class="contacto__entrada" type="text" id="nombre" required>
+                    <label class="contacto__etiqueta" for="nombre">Nombre</label>
+                </div>
+                <div class="contacto__campos">
+                    <input class="contacto__entrada" type="email" id="email" required>
+                    <label class="contacto__etiqueta" for="email">Email</label>
+                </div>
+                <div class="contacto__campos">
+                    <input class="contacto__entrada" type="text" id="asunto" required>
+                    <label class="contacto__etiqueta" for="asunto">Asunto</label>
+                </div>
+                <div class="contacto__campos--mensaje">
+                    <textarea class="contacto__entrada" id="mensaje" cols="30" rows="10"></textarea>
+                    <label class="contacto__etiqueta--mensaje" for="mensaje">Mensaje</label>
+                </div>
+                <input class="contacto__enviar" type="submit" value="Enviar Mensaje">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3 class="footer__titulo">Desarrollado por Alejandro Martín<br>2022</h3>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+.footer {
+    background-color: var(--fondo-blanco-alt);
+    padding: 2%;
+    line-height: 2rem;
+    text-align: center;
+}

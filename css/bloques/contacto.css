@@ -1,0 +1,145 @@
+.contacto {
+    display: flex;
+    align-items: center;
+    background-color: var(--fondo-celeste);
+}
+
+.contacto__imagen {
+    align-self: stretch;
+}
+
+.contacto__formulario input {
+    display: block;
+}
+
+.contacto__titulo {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.contacto__general {
+    margin-left: 20px;
+}
+
+.contacto__general p {
+    padding: 1rem 0;
+    line-height: 1.2rem;
+}
+
+.contacto__campos{
+    position: relative; /*para poder ubicar el label con position absolute*/
+    background-color: var(--fondo-blanco-alt);
+    height: 56px;
+    border-radius: 10px 10px 0 0;
+    margin: 2rem 0;
+}
+
+.contacto__etiqueta {
+    position: absolute; /*ubicamos el label dentro del div*/
+    display: block;
+    color: var(--fuente-gris-claro);
+    font-size: 16px;
+    font-weight: 400;
+    left: 14px;
+    top: 50%;
+    user-select: none; /*no deja seleccionar con el mouse*/
+    transform: translateY(-50%); /*junto al top termina de centrar el label en la vertical*/
+    transform-origin: left top; /*posicionamiento cuando se produce la transicion*/
+    transition: transform 200ms;
+}
+
+.contacto__entrada {
+    border-style: none;
+    width: 100%;
+    height: 100%;
+    font-family: var(--raleway);
+    font-weight: 400;
+    color: var(--fuente-negro-claro);
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 28px 14px 6px;
+    font-size: 16px;
+    border-bottom: 2px var(--fuente-gris-claro) solid;
+}
+
+/*truco para evitar que el autofill modifique el fondo de los inputs*/
+.contacto__entrada:-webkit-autofill,input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.contacto__entrada:focus {
+    outline: none;
+    border-bottom: 2px var(--azul) solid;
+}
+
+/*
+Selección del label cuando el input tiene foco o cuando lo pierde y está lleno.
+El selector + permite la selección el elemento siguiente, en este caso el label,
+por lo que es necesario que el label esté después del input en el html.
+La clase campo__completo se agrega o elimina del input mediante el codigo de JavaScript.
+*/
+.contacto__entrada:focus + .contacto__etiqueta, .campo__completo + .contacto__etiqueta {
+    transform: translateY(-100%) scale(0.75); 
+}
+
+/*MENSAJE*/
+.contacto__campos--mensaje{
+    position: relative; 
+    background-color: var(--fondo-blanco);
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+    margin: 2rem 0;
+}
+
+.contacto__etiqueta--mensaje {
+    position: absolute; 
+    display: block;
+    color: var(--fuente-gris-claro);
+    font-size: 16px;
+    font-weight: 400;
+    left: 14px;
+    top: 20%;
+    user-select: none; 
+    transform: translateY(-50%); 
+    transform-origin: left top; 
+    transition: transform 200ms;
+}
+
+.contacto__entrada:focus + .contacto__etiqueta--mensaje, .campo__completo + .contacto__etiqueta--mensaje {
+    transform: translateY(-100%) scale(0.75); 
+}
+
+/*BOTON ENVIAR*/
+.contacto__enviar {
+    min-width: 144px;
+    min-height: 51px;
+    color: var(--fondo-blanco);
+    background-color: var(--azul);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+    border-style: none;
+    transition: 300ms;
+}
+
+.contacto__enviar:hover {
+    background-color: var(--azul-claro);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contacto__imagen {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacto__general {
+        margin-left: 0;
+    }
+}
+
+
+
+
